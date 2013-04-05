@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>SendToMyKindle - Home</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <meta name="keywords" content="dropbox kindle"/>
+        <meta name="description" content=""/>
+        <meta name="author" content="Paolo Casarini"/>
+        <meta name="copyright" content="Paolo Casarini"/>
+        <meta name="robots" content=""/>
+        <link rel="stylesheet" type="text/css" href="projectsite.css" media="all"/>
+    </head>
+    <body>
+        <div id="wrapper">
+            <h1>SendToMyKindle</h1>
+            <ul class="tabset_tabs">
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="faq.html">FAQ</a>
+                </li>
+                <li>
+                    <a href="contacts.html">Contacts</a>
+                </li>
+            </ul>
+            <div id="tab1" class="tabset_content">
+                <h2 class="tabset_label">Home</h2>
+                <h3>
+                    <a id="overview" name="overview">Overview</a>
+                </h3>
+                <p>SendToMyKindle is a DropBox App to send files from DropBox to your Kindle
+                    account through the @kindle.com @free.kindle.com email address.
+                </p>
+                <h3>
+                    <a id="requirements" name="howto">How to use it</a>
+                </h3>
+                <form name="sendtomykindle" action="app.php" onsubmit="this.email.value = this.emailuser.value + this.emaildomain.value; return true;">
+                    <ol>
+                        <li>Visit your <a href="https://www.amazon.com/gp/digital/fiona/manage#pdocSettings" target="_new">Kindle's setting page</a> and add sendtomykindle@casarini.org to the approved email list.</li>
+                        <li>Enter your Kindle's email address here:
+                            <input type="hidden" name="email" value=""/>
+                            <input type="text" name="emailuser" pattern="[^ @]+" size="20"/>
+                            <select name="emaildomain"><option>@kindle.com</option><option>@free.kindle.com</option></select>
+                        </li>
+                        <li>Allow the app on Dropbox within your account clicking the button below:</li>
+                    </ol>
+                    <p style="margin-left: auto; margin-right: auto;width: 6em; margin-bottom: 20px">
+                        <input style="margin: 0 auto" type="submit" class="g-button" value="Save &amp; Send"/>
+                    </p>
+                </form>
+                <p>Once you have allowed the app to use your Dropbox account, your <em>app folder</em> (<tt>/Apps/SentToMyKindle</tt>) will be scanned regularly without futher actions needed from you.</p>
+                <p>Just put the files that you want to send to your kindle account the <em>app folder</em> and after few minutes you'll find them on your kindle.</p>
+                <p>Enjoy!</p>
+            </div>
+            Copyright &copy; 2012-2013 <a href="http://www.casarini.org" target="_new">Paolo Casarini</a>
+        </div>
+    </body>
+
+
+</html>
+
+
